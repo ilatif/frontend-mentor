@@ -17,9 +17,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Screenshot
 
 **Desktop:**
+
 ![](https://github.com/ilatif/frontend-mentor/assets/1183802/e25b472d-6149-4e73-ac39-26a696bb6462)
 
 **Mobile:**
+
 ![](https://github.com/ilatif/frontend-mentor/assets/1183802/b1eb7462-7b6c-428f-b4ca-6810af0f10e4)
 
 ### Links
@@ -33,8 +35,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - [create-react-app](https://create-react-app.dev/)
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
 ### What I learned
