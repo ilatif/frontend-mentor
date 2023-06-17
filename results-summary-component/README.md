@@ -18,11 +18,11 @@ This is a solution to the [Results Summary component challenge on Frontend Mento
 
 **Desktop:**
 
-![](https://github.com/ilatif/frontend-mentor/assets/1183802/e25b472d-6149-4e73-ac39-26a696bb6462)
+![](https://github.com/ilatif/frontend-mentor/assets/1183802/38a9c20d-4f74-4a7b-ba7e-452baf2bf9a4)
 
 **Mobile:**
 
-![](https://github.com/ilatif/frontend-mentor/assets/1183802/b1eb7462-7b6c-428f-b4ca-6810af0f10e4)
+![](https://github.com/ilatif/frontend-mentor/assets/1183802/0610e6da-3f82-46aa-967c-13c9d7e90976)
 
 ### Links
 
