@@ -1,0 +1,91 @@
+.summary-container {
+  width: 393px;
+  height: 512px;
+  border-radius: 0px 30px 30px 0px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 10px 10px 60px -25px hsl(241, 81%, 54%, 0.2);
+  transform: translateX(-25px);
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+
+.summary-heading {
+  font-size: 1.5rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 700;
+  margin-top: 45px;
+  color: hsl(224, 30%, 27%);
+}
+
+.list {
+  margin-top: 30px;
+}
+
+.list-item {
+  width: 290px;
+  height: 57px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.list-item .list-item-icon {
+  margin-left: 10px;
+}
+
+.list-item .list-item-type {
+  margin-top: -5px;
+  margin-left: 12px;
+  flex-basis: 57%;
+}
+
+.list-item .list-item-score p {
+  display: inline;
+}
+
+.list-item .list-item-score .obtained {
+  color: hsl(224, 30%, 27%);
+}
+
+.list-item .list-item-score .total {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+.list-item-reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+
+.list-item-memory {
+  background: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+
+.list-item-verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+
+.list-item-visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+
+.btn-continue {
+  margin-top: 27px;
+  width: 288px;
+  height: 56px;
+  border-radius: 50px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsla(0, 0%, 100%, 0.8);
+  font-size: 1.1rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 700;;
+}
+
+.btn-continue:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
