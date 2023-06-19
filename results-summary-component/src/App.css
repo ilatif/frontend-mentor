@@ -23,4 +23,8 @@
     transform: unset;
     padding-left: 30px;
   }
+
+  .list-item {
+    width: 330px;
+  }
 }
