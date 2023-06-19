@@ -17,4 +17,10 @@
     width: 100%;
     border-radius: 0px 0px 30px 30px;
   }
+
+  .summary-container {
+    width: 100%;
+    transform: unset;
+    padding-left: 30px;
+  }
 }
