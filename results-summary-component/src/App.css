@@ -22,9 +22,10 @@
     width: 100%;
     transform: unset;
     padding-left: 30px;
+    padding-right: 30px;
   }
 
   .list-item {
-    width: 330px;
+    width: 100%;
   }
 }
