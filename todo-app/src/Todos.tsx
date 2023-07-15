@@ -57,7 +57,7 @@ function Todos(props: TodosProps) {
       <div className="todos-states-mobile">
         <p className={filter === 'all' ? 'active' : ''} onClick={_ => setFilter('all')}>All</p>
         <p className={filter === 'active' ? 'active' : ''} onClick={_ => setFilter('active')}>Active</p>
-        <p className={filter === 'completed' ? 'active' : ''} onClick={_ => setFilter('commpleted')}>Completed</p>
+        <p className={filter === 'completed' ? 'active' : ''} onClick={_ => setFilter('completed')}>Completed</p>
       </div>
 
       <p className="todos-helpnote">Drag and drop to reorder list</p>
