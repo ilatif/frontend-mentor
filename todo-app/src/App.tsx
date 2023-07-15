@@ -13,7 +13,7 @@ interface Todo {
 }
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
   const [todos, setTodos] = useState([
     {
       state: 'completed',
