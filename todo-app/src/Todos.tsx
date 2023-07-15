@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './Todos.css';
 
 interface TodosProps {
-  todos: { state: 'active'|'completed', text: string, key: number }[],
+  todos: { state: string, text: string, key: number }[],
   updateTodo: (key: number, checked: boolean) => void
   deleteTodo: (key: number) => void
   clearCompleted: () => void
@@ -25,11 +25,11 @@ function Todos(props: TodosProps) {
     }).map((todo) => {
     return (
       <div className="todo" key={todo.key}>
-        <input type="checkbox" checked={todo.state === 'completed' ? 'checked' : ''} value="1" name="todo-status" className="todo-circle" onChange={(e) => {
+        <input type="checkbox" checked={todo.state === 'completed' ? true: false} value="1" name="todo-status" className="todo-circle" onChange={(e) => {
           props.updateTodo(todo.key, e.target.checked);
         }} />
         <p className={`todo-text ${todo.state === 'completed' ? 'todo-text-checked' : ''}`}>{todo.text}</p>
-        <img src="./images/icon-cross.svg" className="todo-cross" onClick={(e) => {
+        <img src="./images/icon-cross.svg" className="todo-cross" onClick={(_) => {
           props.deleteTodo(todo.key);
         }} />
       </div>
@@ -47,17 +47,17 @@ function Todos(props: TodosProps) {
           {filter !== 'completed' && (activeCount === 1 ? `1 item left` : `${activeCount} items left`)}
         </p>
         <div className="todos-states">
-          <p className={filter === 'all' ? 'active' : ''} onClick={e => setFilter('all')}>All</p>
-          <p className={filter === 'active' ? 'active' : ''} onClick={e => setFilter('active')}>Active</p>
-          <p className={filter === 'completed' ? 'active' : ''} onClick={e => setFilter('completed')}>Completed</p>
+          <p className={filter === 'all' ? 'active' : ''} onClick={_ => setFilter('all')}>All</p>
+          <p className={filter === 'active' ? 'active' : ''} onClick={_ => setFilter('active')}>Active</p>
+          <p className={filter === 'completed' ? 'active' : ''} onClick={_ => setFilter('completed')}>Completed</p>
         </div>
         <p className="todos-clear" onClick={props.clearCompleted}>Clear Completed</p>
       </div>
 
       <div className="todos-states-mobile">
-        <p className={filter === 'all' ? 'active' : ''} onClick={e => setFilter('all')}>All</p>
-        <p className={filter === 'active' ? 'active' : ''} onClick={e => setFilter('active')}>Active</p>
-        <p className={filter === 'completed' ? 'active' : ''} onClick={e => setFilter('commpleted')}>Completed</p>
+        <p className={filter === 'all' ? 'active' : ''} onClick={_ => setFilter('all')}>All</p>
+        <p className={filter === 'active' ? 'active' : ''} onClick={_ => setFilter('active')}>Active</p>
+        <p className={filter === 'completed' ? 'active' : ''} onClick={_ => setFilter('commpleted')}>Completed</p>
       </div>
 
       <p className="todos-helpnote">Drag and drop to reorder list</p>

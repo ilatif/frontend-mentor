@@ -7,7 +7,7 @@ import Todos from './Todos';
 import './App.css';
 
 interface Todo {
-  state: 'active'|'completed',
+  state: string,
   text: string,
   key: number,
 }

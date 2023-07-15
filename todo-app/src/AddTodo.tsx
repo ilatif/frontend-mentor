@@ -1,13 +1,14 @@
 import './AddTodo.css';
 
-function AddTodo(props: { addTodo: (sring) => void }) {
+function AddTodo(props: { addTodo: (text: string) => void }) {
   return <>
     <div className="add-todo-container">
-      <input type="checkbox" className="todo-circle" disabled="disabled" />
+      <input type="checkbox" className="todo-circle" disabled={false} />
       <input type="text" placeholder="Create a new todo..." className="todo-input" onKeyUp={(e) => {
         if (e.keyCode === 13) {
-          props.addTodo(e.target.value);
-          e.target.value = '';
+          const target = e.target as HTMLInputElement;
+          props.addTodo(target.value);
+          target.value = '';
         }
       }} />
     </div>
