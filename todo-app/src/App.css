@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+.container {
+  width: 1440px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.light.container {
+  background: url('./images/bg-desktop-light.jpg') no-repeat;
+}
+
+.dark.container {
+  background: url('./images/bg-desktop-dark.jpg') no-repeat;
+  background-color: hsl(235, 21%, 11%);
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 375px;
+  }
+
+  .light.container {
+    background: url('./images/bg-mobile-light.jpg') no-repeat;
+  }
+
+  .dark.container {
+    background: url('./images/bg-mobile-dark.jpg') no-repeat;
+    background-color: hsl(235, 21%, 11%);
+  }
+}

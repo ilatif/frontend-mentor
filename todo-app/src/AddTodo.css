@@ -1,0 +1,80 @@
+.add-todo-container {
+  width: 540px;
+  height: 65px;
+  margin-top: 50px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  gap: 22px;
+  flex-shrink: 0;
+}
+
+.light .add-todo-container {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.dark .add-todo-container {
+  background-color: hsl(235, 24%, 19%);
+}
+
+.todo-circle {
+  margin-left: 22px;
+  width: 24px;
+  height: 24px;
+  appearance: none;
+  border-radius: 100%;
+}
+
+.light .todo-circle {
+  border: solid 1px hsl(236, 33%, 92%);
+}
+
+.dark .todo-circle {
+  border: solid 1px hsl(237, 14%, 26%);
+}
+
+.todo-input {
+  outline: none;
+  flex-grow: 1;
+  margin-right: 10px;
+  border: none;
+  font-family: 'Josefin Sans';
+  font-weight: 400;
+  font-size: 1.1rem;
+  height: 95%;
+  caret-color: hsl(220, 98%, 61%);
+}
+
+.light .todo-input {
+  color: hsl(236, 9%, 61%);
+  background-color: hsl(0, 0%, 98%);
+}
+
+.dark .todo-input {
+  color: hsl(236, 9%, 61%);
+  background-color: hsl(235, 24%, 19%);
+}
+
+.todo-input::placeholder {
+  color: hsl(236, 9%, 61%);
+}
+
+@media screen and (max-width: 700px) {
+  .add-todo-container {
+    width: 90%;
+    height: 45px;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .todo-circle {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .todo-input {
+    margin-top: 5px;
+    height: 50%;
+    font-size: 0.7rem;
+  }
+}

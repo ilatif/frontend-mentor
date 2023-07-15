@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  width: 540px;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+
+.heading {
+  margin: 0px;
+  font-family: 'Josefin Sans';
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.light .heading {
+  color: hsl(0, 0%, 98%);
+}
+
+.dark .heading {
+  color: hsl(0, 0%, 98%);
+}
+
+.theme-icon {
+  width: 26px;
+  height: 26px;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    width: 90%;
+    margin-top: 45px;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+
+  .theme-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

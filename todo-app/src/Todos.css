@@ -1,0 +1,223 @@
+.todos-container {
+  margin-top: 22px;
+}
+
+.todo {
+  width: 540px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.todo:first-of-type {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.light .todo, .light, .light .todos-info, .light .todos-states-mobile {
+  background-color: hsl(0, 0%, 98%);
+  border-bottom: solid 1px hsl(236, 33%, 92%);
+}
+
+.dark .todo, .dark .todos-info, .dark .todos-states-mobile {
+  background-color: hsl(235, 24%, 19%);
+  border-bottom: solid 1px hsl(237, 14%, 26%);
+}
+
+.todo-circle {
+  margin-left: 22px;
+  width: 24px;
+  height: 24px;
+  appearance: none;
+  border-radius: 100%;
+  margin-top: 0px;
+}
+
+.todo-circle:checked {
+  background-image: linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.todo-circle:checked::before {
+  content: url('./images/icon-check.svg');
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 4px;
+}
+
+.light .todo-circle {
+  border: solid 1px hsl(236, 33%, 92%);
+}
+
+.dark .todo-circle {
+  border: solid 1px hsl(237, 14%, 26%);
+}
+
+.todo-text {
+  outline: none;
+  flex-grow: 1;
+  margin-right: 10px;
+  border: none;
+  font-family: 'Josefin Sans';
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.todo-text-checked {
+  text-decoration: line-through;
+}
+
+.light .todo-text {
+  color: hsl(235, 19%, 35%);
+  background-color: hsl(0, 0%, 98%);
+}
+
+.dark .todo-text {
+  color: hsl(234, 39%, 85%);
+  background-color: hsl(235, 24%, 19%);
+}
+
+.light .todo-text-checked {
+  color:  hsl(233, 11%, 84%);
+}
+
+.dark .todo-text-checked {
+  color: hsl(234, 11%, 52%);
+}
+
+.todo-cross {
+  margin-right: 22px;
+  display: none;
+}
+
+.todo:hover .todo-cross {
+  display: block;
+}
+
+.todos-info {
+  height: 50px;
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Josefin Sans';
+  font-weight: 400;
+  font-size: 0.8rem;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.light .todos-info, .light .todos-states-mobile, .light .todos-helpnote {
+  color: hsl(236, 9%, 61%);
+}
+
+.dark .todos-info, .dark .todos-states-mobile, .dark .todos-helpnote {
+  color: hsl(234, 11%, 52%);
+}
+
+.todos-count {
+  margin-left: 22px;
+}
+
+.todos-states, .todos-states-mobile {
+  display: flex;
+  gap: 18px;
+  font-weight: 700;
+}
+
+.todos-states .active, .todos-states-mobile .active {
+  pointer-events: none;
+  color: hsl(220, 98%, 61%);
+}
+
+.light .todos-states p:not(.active):hover, .light .todos-states-mobile p:not(.active):hover {
+  cursor: pointer;
+  color: hsl(235, 19%, 35%);
+}
+
+.dark .todos-states p:not(.active):hover, .dark .todos-states-mobile p:not(.activve):hover {
+  cursor: pointer;
+  color: hsl(234, 39%, 85%);
+}
+
+.todos-clear {
+  margin-right: 22px;
+}
+
+.light .todos-clear:hover {
+  cursor: pointer;
+  color: hsl(235, 19%, 35%);
+}
+
+.dark .todos-clear:hover {
+  cursor: pointer;
+  color: hsl(234, 39%, 85%);
+}
+
+@media screen and (min-width: 700px) {
+  .todos-states-mobile {
+    display: none;
+  }
+}
+
+.todos-helpnote {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Josefin Sans';
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 700px) {
+  .todos-container {
+    width: 90%;
+  }
+
+  .todo {
+    width: 100%;
+    height: 45px;
+    gap: 10px;
+  }
+
+  .todo-circle {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .todo-circle:checked::before {
+    content: url('./images/icon-check.svg');
+    display: inline-block;
+    margin-left: 3px;
+    margin-top: 1px;
+  }
+
+  .todo-text {
+    font-size: 0.7rem;
+  }
+
+  .todo-cross {
+    display: block;
+    width: 12px;
+    height: 12px;
+  }
+
+  .todos-info {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+  
+  .todos-states {
+    display: none;
+  }
+
+  .todos-states-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 0.7rem;
+    height: 45px;
+    border-radius: 5px;
+  }
+}
